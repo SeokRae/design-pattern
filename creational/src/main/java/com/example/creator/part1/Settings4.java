@@ -5,7 +5,8 @@ package com.example.creator.part1;
  */
 public class Settings4 {
 
-    private Settings4() { }
+    private Settings4() {
+    }
 
     private static class Settings4Holder {
         private static final Settings4 INSTANCE = new Settings4();

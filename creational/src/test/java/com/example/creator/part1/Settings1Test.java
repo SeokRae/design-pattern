@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -29,5 +33,23 @@ class Settings1Test {
         Settings1 expected = declaredConstructor.newInstance();
 
         assertThat(actual).isNotEqualTo(expected);
+    }
+
+    @DisplayName("멀티 스레드 기반의 테스트")
+    @Test
+    void testCase3() throws InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
+        CountDownLatch latch = new CountDownLatch(10);
+
+        IntStream.rangeClosed(0, 10)
+                .forEach(value -> {
+                    executorService.execute(() -> {
+                        Settings1 instance = Settings1.getInstance();
+                        System.out.println("instance = " + instance);
+                        latch.countDown();
+                    });
+                });
+
+        latch.await();
     }
 }
