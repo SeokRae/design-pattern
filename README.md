@@ -14,17 +14,17 @@
         - 서로 다른 두 스레드가 한번에 접근하여 객체를 생성하는 경우 서로 다른 싱글턴 객체를 만들 수 있다.
 
 ```text
-instance = com.example.creator.part1.Settings1@603c34c7
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@3963d1a6
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
-instance = com.example.creator.part1.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@603c34c7
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@3963d1a6
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
+instance = com.example.creator._01_singleton.Settings1@322ff062
 ```
 
 2. **싱글턴 패턴 구현 방법 2** `(Eager-Initialization)`
