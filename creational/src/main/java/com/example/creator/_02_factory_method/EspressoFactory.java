@@ -2,9 +2,8 @@ package com.example.creator._02_factory_method;
 
 public class EspressoFactory implements CoffeeMachine {
     @Override
-    public Coffee createCoffee() {
-        EspressoBean espressoBean = new EspressoBean("좋은 원두", 7);
-        EspressoBean grindBean = grindBean(espressoBean);
+    public Coffee createCoffee(EspressoBean bean, int water) {
+        EspressoBean grindBean = grindBean(bean);
         return new Espresso(grindBean, 0);
     }
 

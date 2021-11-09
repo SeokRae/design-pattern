@@ -5,6 +5,6 @@ package com.example.creator._01_singleton;
  */
 public enum Settings5 {
 
-    INSTANCE;
+    INSTANCE
 
 }

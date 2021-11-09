@@ -5,12 +5,12 @@ public interface CoffeeMachine {
     default Coffee orderCoffee(EspressoBean bean, int water, String orderName) {
         validate(bean);
         prepareFor(bean.getBeanName());
-        Coffee coffee = createCoffee();
+        Coffee coffee = createCoffee(bean, water);
         servingTo(orderName, coffee);
         return coffee;
     }
 
-    Coffee createCoffee();
+    Coffee createCoffee(EspressoBean bean, int water);
 
     private void validate(EspressoBean bean) {
         if (bean.isValid()) {
