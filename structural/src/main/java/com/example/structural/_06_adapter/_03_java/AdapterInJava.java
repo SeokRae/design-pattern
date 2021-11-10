@@ -12,10 +12,10 @@ public class AdapterInJava {
         ArrayList<String> list = Collections.list(enumeration);
 
         // io
-        try(InputStream is = new FileInputStream("input.txt");
-            InputStreamReader isr = new InputStreamReader(is);
-            BufferedReader reader = new BufferedReader(isr)) {
-            while(reader.ready()) {
+        try (InputStream is = new FileInputStream("input.txt");
+             InputStreamReader isr = new InputStreamReader(is);
+             BufferedReader reader = new BufferedReader(isr)) {
+            while (reader.ready()) {
                 System.out.println(reader.readLine());
             }
         } catch (IOException e) {
