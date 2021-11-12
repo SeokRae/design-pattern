@@ -12,7 +12,9 @@ public class Client {
         bag.add(healPotion);
 
         Client client = new Client();
+        // 부분 가격
         client.printPrice(doranBlade);
+        // 전체 가격
         client.printPrice(bag);
     }
 
