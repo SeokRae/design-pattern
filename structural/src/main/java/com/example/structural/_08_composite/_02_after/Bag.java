@@ -18,6 +18,7 @@ public class Bag implements Component {
 
     @Override
     public int getPrice() {
-        return components.stream().mapToInt(Component::getPrice).sum();
+        return components.stream()
+                .mapToInt(Component::getPrice).sum();
     }
 }

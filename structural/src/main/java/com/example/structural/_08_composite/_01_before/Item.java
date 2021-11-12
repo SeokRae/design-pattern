@@ -2,9 +2,9 @@ package com.example.structural._08_composite._01_before;
 
 public class Item {
 
-    private String name;
+    private final String name;
 
-    private int price;
+    private final int price;
 
     public Item(String name, int price) {
         this.name = name;
