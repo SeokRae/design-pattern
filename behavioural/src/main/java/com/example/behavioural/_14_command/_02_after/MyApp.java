@@ -4,7 +4,7 @@ import com.example.behavioural._14_command._01_before.Game;
 
 public class MyApp {
 
-    private Command command;
+    private final Command command;
 
     public MyApp(Command command) {
         this.command = command;
