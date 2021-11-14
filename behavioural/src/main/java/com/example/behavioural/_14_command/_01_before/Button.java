@@ -2,7 +2,7 @@ package com.example.behavioural._14_command._01_before;
 
 public class Button {
 
-    private Light light;
+    private final Light light;
 
     public Button(Light light) {
         this.light = light;

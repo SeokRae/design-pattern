@@ -4,7 +4,7 @@ import com.example.behavioural._13_chain_of_responsibilities._01_before.Request;
 
 public class Client {
 
-    private RequestHandler requestHandler;
+    private final RequestHandler requestHandler;
 
     public Client(RequestHandler requestHandler) {
         this.requestHandler = requestHandler;

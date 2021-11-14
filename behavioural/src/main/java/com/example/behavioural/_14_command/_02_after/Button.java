@@ -7,7 +7,7 @@ import java.util.Stack;
 
 public class Button {
 
-    private Stack<Command> commands = new Stack<>();
+    private final Stack<Command> commands = new Stack<>();
 
     public void press(Command command) {
         command.execute();

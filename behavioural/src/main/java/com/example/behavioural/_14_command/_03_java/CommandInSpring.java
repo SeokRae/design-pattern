@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class CommandInSpring {
 
-    private DataSource dataSource;
+    private final DataSource dataSource;
 
     public CommandInSpring(DataSource dataSource) {
         this.dataSource = dataSource;

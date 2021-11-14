@@ -4,7 +4,7 @@ import com.example.behavioural._14_command._01_before.Light;
 
 public class LightOffCommand implements Command {
 
-    private Light light;
+    private final Light light;
 
     public LightOffCommand(Light light) {
         this.light = light;

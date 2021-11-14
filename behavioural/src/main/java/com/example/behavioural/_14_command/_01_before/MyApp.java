@@ -2,7 +2,7 @@ package com.example.behavioural._14_command._01_before;
 
 public class MyApp {
 
-    private Game game;
+    private final Game game;
 
     public MyApp(Game game) {
         this.game = game;
