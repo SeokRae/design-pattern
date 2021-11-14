@@ -1,7 +1,6 @@
 package com.example.behavioural._13_chain_of_responsibilities._03_java;
 
-import javax.servlet.*;
-import java.io.IOException;
+import javax.servlet.Filter;
 
 public class CoRInJava {
 
